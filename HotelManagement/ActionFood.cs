@@ -15,14 +15,15 @@ namespace HotelManagement
     public partial class ActionFood : Form
     {
         public int FoodID;
-
         public bool completeActionFlag = false;
         private bool addFlag;
+
         public enum Action
         {
             Add ,
             Edit
         }
+
         public ActionFood(Action action)
         {
             InitializeComponent();
@@ -52,44 +53,26 @@ namespace HotelManagement
         private void ActionFood_Load(object sender, EventArgs e)
         {
 
-
-
             //-------------Load Edit ------------------
             if (!addFlag)
             {
                 if (HotelDatabase.Food.SearchFood(FoodID))
                 {
-
                     txtTitle.Text = HotelDatabase.Food.Title;
                     txtPrice.Text = HotelDatabase.Food.Price.ToString();
                     txtDecription.Text = HotelDatabase.Food.Description;
-
-
-
                 }
                 else
                 {
-
-
                     PanelStatus("Unable To Complete Action", Status.Red);
-
-
-
                 }
-
-
             }
-           
-      
-                
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
-
-
 
 
         private enum Status
@@ -106,49 +89,38 @@ namespace HotelManagement
             {
                 prgbCustError.ProgressColor = Color.Red;
                 lblCustError.ForeColor = Color.Red;
-                //lblCustError.Text = text;
-
             }
+
             else if (status == Status.Green)
             {
-
                 prgbCustError.ProgressColor = Color.Green;
                 lblCustError.ForeColor = Color.Green;
-                //lblCustError.Text = text;
-
             }
+
             else
             {
                 prgbCustError.ProgressColor = Color.Blue;
                 lblCustError.ForeColor = Color.Blue;
-
             }
-
-
-
-
         }
+
         private void TextBoxColor(BunifuMetroTextbox txtBox, Status status)
         {
             if (status == Status.Red)
             {
                 txtBox.BorderColorIdle = Color.Red;
-
-
             }
             else if (status == Status.Green)
             {
-
                 txtBox.BorderColorIdle = Color.FromArgb(231, 228, 228);
             }
             else
             {
                 txtBox.BorderColorIdle = Color.FromArgb(128, 128, 128);
             }
-
         }
+
         private int txtCount = 0;
-        //private bool validationFlag = false;
         private bool validationFlag = false;
         private bool TextBoxCheck(BunifuMetroTextbox txtBox, string txt)
         {
@@ -189,16 +161,11 @@ namespace HotelManagement
                 else
                 {
                     PanelStatus("Price Must Be Numeric", Status.Red);
-                }
-
-                
+                }   
             }
             else
             {
-
                 PanelStatus("Please Fill The Blank", Status.Red);
-
-
             }
             txtCount = 0;
 
@@ -227,64 +194,35 @@ namespace HotelManagement
                         PanelStatus("Unable To Complete Action --- Insert", Status.Red);
                     }
                 }
-                //---------- This is Edit Part -----------
+                //----------  Edit Part -----------
                 else
                 {
                     if (HotelDatabase.Food.Update(FoodID , txtTitle.Text, Convert.ToInt32(txtPrice.Text), txtDecription.Text))
                     {
-
-
                         PanelStatus("Action Completed Successfully", Status.Green);
                         completeActionFlag = true;
                         this.Dispose();
-
-
                     }
                     else
 	                {
-
                         completeActionFlag = false;
                         PanelStatus("Unable To Complete Action --- Update", Status.Red);
-
                     }
-
-
                 }
-
-
-
-
-
-
-
-
-
             }
-
         }
 
 
         private void TextBoxEnter(object sender, EventArgs e)
         {
             var txtBox = sender as BunifuMetroTextbox;
-
             txtBox.BorderColorIdle = Color.FromArgb(231, 228, 228);
-
             txtBox.ForeColor = Color.Black;
-
-
-
         }
+
         private void TextBoxLeave(object sender, EventArgs e)
         {
             var txtBox = sender as BunifuMetroTextbox;
-            //if)
-            //{
-
-            //}
-            //txtBox.ForeColor = Color.DarkGray;
-
-
         }
     }
 }

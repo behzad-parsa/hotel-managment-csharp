@@ -28,8 +28,6 @@ namespace HotelManagement
         {
             InitializeComponent();
 
-
-
             if (action == Action.Add)
             {
                 addFlag = true;
@@ -48,9 +46,6 @@ namespace HotelManagement
                 picIcon.Image = Properties.Resources._326602_32;
                 lblTitle.Text = "Edit";
             }
-
-
-
         }
 
 
@@ -63,9 +58,6 @@ namespace HotelManagement
         private void ActionRole_Load(object sender, EventArgs e)
         {
             dicAllModules = HotelDatabase.Module.GetAllModules();
-
-
-
 
             //----Access Panel-----------
 
@@ -126,13 +118,7 @@ namespace HotelManagement
 
 
             }
-            ////Edit Part
-            //else
-            //{
-
-            //}
-
-
+            
         }
 
 
@@ -208,14 +194,11 @@ namespace HotelManagement
                 if (item is BunifuCustomLabel)
                 {
                     lbl = item as BunifuCustomLabel;
-
                 }
                 else
                 {
                     prgb = item as BunifuCircleProgressbar;
-
                 }
-
             }
 
             lbl.Text = text;
@@ -223,31 +206,17 @@ namespace HotelManagement
             {
                 prgb.ProgressColor = Color.Red;
                 lbl.ForeColor = Color.Red;
-
-
             }
             else if (status == Status.Green)
             {
-
                 prgb.ProgressColor = Color.Green;
                 lbl.ForeColor = Color.Green;
-
-
             }
             else
             {
                 prgb.ProgressColor = Color.Blue;
                 lbl.ForeColor = Color.Blue;
-
             }
-
-
-
-
-
-
-
-
         }
 
         private void TextBoxColor(BunifuMetroTextbox txtBox, Status status)
@@ -256,11 +225,9 @@ namespace HotelManagement
             {
                 txtBox.BorderColorIdle = Color.Red;
 
-
             }
             else if (status == Status.Green)
             {
-
                 txtBox.BorderColorIdle = Color.FromArgb(231, 228, 228);
             }
             else
@@ -279,12 +246,6 @@ namespace HotelManagement
                 TextBoxColor(txtBox, Status.Red);
                 return false;
             }
-            //else if (txt == "National Code")
-            //{
-            //    TextBoxColor(txtBox, Status.blue);
-            //    txtCount++;
-            //    return true;
-            //}
             else
             {
                 TextBoxColor(txtBox, Status.Green);
@@ -294,15 +255,6 @@ namespace HotelManagement
             }
         }
 
-
-
-
-
-
-
-
-
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -311,12 +263,9 @@ namespace HotelManagement
         private void btnSave_Click(object sender, EventArgs e)
         {
             TextBoxCheck(txtRole, "");
-            //TextBoxCheck(txtTitle, "");
-
-
+            
             if (txtCount == 1)
             {
-                
                 if (lstChoosedModuleID.Count != 0)
                 {
                     validationFlag = true;
@@ -325,19 +274,13 @@ namespace HotelManagement
                 {
                     PanelStatus(panelCustStatus , "Access level Not Specified", Status.Red);
                 }
-
-
             }
             else
             {
-
                 PanelStatus(panelCustStatus,"Please Fill The Blank", Status.Red);
-
 
             }
             txtCount = 0;
-
-
 
             if (validationFlag)
             {
@@ -357,9 +300,7 @@ namespace HotelManagement
                             if (HotelDatabase.AccessLevel.Insert(res , lstChoosedModuleID[i]) >0)
                             {
                                 counter++;
-
                             }
-
                         }
                         if (counter == lstChoosedModuleID.Count)
                         {
@@ -372,9 +313,6 @@ namespace HotelManagement
                             completeActionFlag = false;
                             PanelStatus(panelCustStatus, "Failed - InsertA", Status.Red);
                         }
-
-
-
                     }
                     else
                     {
@@ -382,7 +320,7 @@ namespace HotelManagement
                         PanelStatus(panelCustStatus, "Failed --- InsertR", Status.Red);
                     }
                 }
-                //---------- This is Edit Part -----------
+                //---------- The Edit Part -----------
                 else
                 {
                     int counter = 0;
@@ -392,45 +330,22 @@ namespace HotelManagement
                         {
                             if (HotelDatabase.AccessLevel.Insert(RoleID, lstChoosedModuleID[i]) > 0)
                             {
-
                                 counter++;
-
                             }
-
-
-
                         }
                         if (counter == lstChoosedModuleID.Count)
                         {
 
-                            PanelStatus(panelCustStatus, "Completed ", Status.Green);
-                            
+                            PanelStatus(panelCustStatus, "Completed ", Status.Green);       
                             completeActionFlag = true;
                             this.Dispose();
                         }
-
-
-
-
-
-
                     }
                     else
                     {
-                        //MessageBox.Show()
                         PanelStatus(panelCustStatus, "Failed -- Delete", Status.Red);
                     }
-
-
                 }
-
-
-
-
-
-
-
-
 
             }
         }

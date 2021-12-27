@@ -3570,11 +3570,6 @@ E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelM
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\aa-DJ\HotelManagement.resources.dll
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Kavenegar.dll
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Newtonsoft.Json.dll
-E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Base.dll
-E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Report.Check.dll
-E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Report.Design.dll
-E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Report.dll
-E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Report.Win.dll
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Report.Helper.dll
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Controls.Win.dll
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Controls.dll
@@ -3599,7 +3594,6 @@ E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelM
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Controls.xml
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Editor.pdb
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\bin\Debug\Stimulsoft.Editor.xml
-E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\obj\Debug\HotelManagement.csprojResolveAssemblyReference.cache
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\obj\Debug\HotelManagement.ActivityItem.resources
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\obj\Debug\HotelManagement.ActionFood.resources
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\obj\Debug\HotelManagement.ActionRole.resources
@@ -3656,3 +3650,5 @@ E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelM
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\obj\Debug\aa-DJ\HotelManagement.resources.dll
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\obj\Debug\HotelManagement.exe
 E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\obj\Debug\HotelManagement.pdb
+E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\obj\Debug\HotelManagement.csprojAssemblyReference.cache
+E:\Programming\Projects\C#\MyProj\Final Proj Imp\Hotel\HotelManagement 85\HotelManagement\obj\Debug\HotelManagement.csproj.CopyComplete

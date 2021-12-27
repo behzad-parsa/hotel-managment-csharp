@@ -110,7 +110,7 @@ namespace HotelManagement
                 
                 var fromAddress = new MailAddress("behzad065@gmail.com", "Hotel Managment Software");
                 var toAddress = new MailAddress(To, name);
-                const string fromPassword = "933220019";
+                const string fromPassword = "";
 
 
                 var smtp = new SmtpClient
@@ -153,7 +153,7 @@ namespace HotelManagement
         {
             try
             {
-                KavenegarApi smsApi = new KavenegarApi("4D706A61344451643655356E4C3276784142586C48785A5A6B662B4F6F49664C");
+                KavenegarApi smsApi = new KavenegarApi("");
                  var res = smsApi.Send("100065995", receiverNumber, text);
 
 

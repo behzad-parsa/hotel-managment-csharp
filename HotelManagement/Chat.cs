@@ -21,17 +21,12 @@ namespace HotelManagement
         }
         public class DataKeeping
         {
-           
-            
-
             public static List<User> UserDataSaver = new List<User>();
         }
 
 
         public class Chat
         {
-            
-            
             Socket socClient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             static readonly object _lock = new object();
             public bool IsConnect { get; private set; }
@@ -60,9 +55,6 @@ namespace HotelManagement
                     Thread Tr = new Thread(new ThreadStart(rcvMsg)) { IsBackground = true };
                     Tr.Start();
 
-
-
-
                     IsConnect = true;
                     return true;
 
@@ -76,10 +68,6 @@ namespace HotelManagement
             }
             public bool DisconnectChatServer()
             {
-
-
-
-
                 byte[] b = new byte[1024];
                 b = Encoding.Unicode.GetBytes("MessageFormat To Disconnect From Server");
                 socClient.Send(b);
@@ -97,11 +85,7 @@ namespace HotelManagement
                 }
                 catch
                 {
-
-
                     return false;
-
-
                 }
             }
 
@@ -229,10 +213,7 @@ namespace HotelManagement
                             }
 
 
-
-
                         }
-
 
                     }
                 }//End Try

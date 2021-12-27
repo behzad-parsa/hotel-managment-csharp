@@ -113,7 +113,7 @@ namespace HotelManagement
             //lblTemp.Text = string.Format("{0}°C", 27);
             //Get Weather
 
-            //OpenWeatherAPI openWeather = new OpenWeatherAPI("aa38704926cc24c468c297a525497db3");
+            //OpenWeatherAPI openWeather = new OpenWeatherAPI("");
             //var weatherDate = openWeather.query("2643743");
             //if (weatherDate != null)
             //{
@@ -258,7 +258,7 @@ namespace HotelManagement
 
             if (duration.Days > 0 || duration.Hours>=3 || Setting.updateWeatherFlag)
             {
-                OpenWeatherAPI openWeather = new OpenWeatherAPI("aa38704926cc24c468c297a525497db3");
+                OpenWeatherAPI openWeather = new OpenWeatherAPI("");
 
                 var weatherDate = openWeather.query(city.ID.ToString());
                 if (weatherDate != null)
