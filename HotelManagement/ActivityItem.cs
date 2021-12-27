@@ -20,14 +20,14 @@ namespace HotelManagement
             InitializeComponent();
         }
 
-        public ActivityItem(Activity act)
+        public ActivityItem(Activity activity)
         {
             InitializeComponent();
-            Activity = act;
 
-            lblDate.Text = Theme.LastTime(act.Date);
-            lblDes.Text = act.Description;
-            lblTitle.Text = act.Title.ToUpper();
+            Activity = activity;
+            lblDate.Text = Theme.LastTime(activity.Date);
+            lblDescription.Text = activity.Description;
+            lblTitle.Text = activity.Title.ToUpper();
 
         }
 
@@ -37,7 +37,20 @@ namespace HotelManagement
             this.MouseLeave += ActivityItem_MouseLeave;
         }
 
-        private void LabelColors(int red , int green , int blue )
+        private void ActivityItem_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(255, 255, 255);
+            LabelColors(116, 130, 154);
+        }
+
+        private void ActivityItem_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(75, 157, 214);
+            LabelColors(255, 255, 255);
+        }
+
+        //changing label Fore color On moues Enter And Leave Events
+        private void LabelColors(int red, int green, int blue)
         {
             foreach (var item in this.Controls)
             {
@@ -49,17 +62,6 @@ namespace HotelManagement
                 }
 
             }
-        }
-        private void ActivityItem_MouseLeave(object sender, EventArgs e)
-        {
-            this.BackColor = Color.FromArgb(255, 255, 255);
-            LabelColors(116, 130, 154);
-        }
-
-        private void ActivityItem_MouseEnter(object sender, EventArgs e)
-        {
-            this.BackColor = Color.FromArgb(75, 157, 214);
-            LabelColors(255, 255, 255);
         }
     }
 }

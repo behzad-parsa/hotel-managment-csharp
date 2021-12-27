@@ -85,11 +85,6 @@ namespace HotelManagement
             this.Email = email;
             this.City = city;
             this.Address = address;
-
-
-
-
-
         }
 
 
@@ -103,11 +98,6 @@ namespace HotelManagement
             this.Gender = gender;
             this.Birthday = birth;
             //this.Address = address;
-
-
-
-
-
         }
 
         //private void MakeConnection()

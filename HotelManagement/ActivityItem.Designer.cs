@@ -33,7 +33,7 @@
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.lblDate = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblTitle = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblDes = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblDescription = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +55,7 @@
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(64, 90);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(10, 91);
             this.bunifuSeparator1.TabIndex = 1;
@@ -70,7 +70,7 @@
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.bunifuSeparator2.LineThickness = 1;
             this.bunifuSeparator2.Location = new System.Drawing.Point(64, -4);
-            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(10, 40);
             this.bunifuSeparator2.TabIndex = 1;
@@ -82,11 +82,11 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Penumbra Sans Std", 12F);
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(130)))), ((int)(((byte)(154)))));
             this.lblDate.Location = new System.Drawing.Point(121, 51);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(143, 24);
+            this.lblDate.Size = new System.Drawing.Size(121, 20);
             this.lblDate.TabIndex = 2;
             this.lblDate.Text = "3 HOURS AGO";
             this.lblDate.MouseEnter += new System.EventHandler(this.ActivityItem_MouseEnter);
@@ -99,30 +99,30 @@
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(130)))), ((int)(((byte)(154)))));
             this.lblTitle.Location = new System.Drawing.Point(127, 91);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(151, 22);
+            this.lblTitle.Size = new System.Drawing.Size(121, 18);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "UPLOAD CONTENT";
             this.lblTitle.MouseEnter += new System.EventHandler(this.ActivityItem_MouseEnter);
             this.lblTitle.MouseLeave += new System.EventHandler(this.ActivityItem_MouseLeave);
             // 
-            // lblDes
+            // lblDescription
             // 
-            this.lblDes.AutoEllipsis = true;
-            this.lblDes.Font = new System.Drawing.Font("Open Sans", 9F);
-            this.lblDes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(155)))), ((int)(((byte)(175)))));
-            this.lblDes.Location = new System.Drawing.Point(127, 120);
-            this.lblDes.Name = "lblDes";
-            this.lblDes.Size = new System.Drawing.Size(287, 61);
-            this.lblDes.TabIndex = 2;
-            this.lblDes.Text = "Invoice has been Edited By Behzad";
-            this.lblDes.MouseEnter += new System.EventHandler(this.ActivityItem_MouseEnter);
-            this.lblDes.MouseLeave += new System.EventHandler(this.ActivityItem_MouseLeave);
+            this.lblDescription.AutoEllipsis = true;
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(155)))), ((int)(((byte)(175)))));
+            this.lblDescription.Location = new System.Drawing.Point(127, 120);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(287, 58);
+            this.lblDescription.TabIndex = 2;
+            this.lblDescription.Text = "Invoice has been Edited By Behzad";
+            this.lblDescription.MouseEnter += new System.EventHandler(this.ActivityItem_MouseEnter);
+            this.lblDescription.MouseLeave += new System.EventHandler(this.ActivityItem_MouseLeave);
             // 
             // ActivityItem
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.lblDes);
+            this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.bunifuSeparator2);
@@ -144,6 +144,6 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
         private Bunifu.Framework.UI.BunifuCustomLabel lblDate;
         private Bunifu.Framework.UI.BunifuCustomLabel lblTitle;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblDes;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblDescription;
     }
 }
